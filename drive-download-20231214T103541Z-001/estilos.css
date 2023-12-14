@@ -1,0 +1,224 @@
+.button {
+    background-color: #491e59;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.icone{
+    background-color: black;
+    float: right;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+/* COMEÇA!! */
+.fundo {
+    background-color: bisque;
+}
+
+.header {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+    color: rgb(1, 1, 1);
+    border-radius: 12px
+}
+
+/*O contêiner da barra de navegação*/
+.topnav {
+    overflow: hidden;
+    background-color: rgb(12, 12, 12);
+    color: black;
+    border-radius: 12px;
+    width: 100%;
+
+}
+
+/*Links da barra de navegação */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - mude de cor ao passar o mouse*/
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Limpa os floats após as colunas */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 
+Crie três colunas desiguais que flutuam uma ao lado da outra */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/*Coluna esquerda e direita */
+.column.side {
+    width: 20%;
+}
+
+/* Coluna do meio
+ */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+/* botao do hamburguer */
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #491e59;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 10s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 30 22px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    color: rgb(2, 3, 3);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: rgb(87, 45, 45);
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.img {
+    height: 50px;
+}
+
+.titulo {
+    font-family: 'Silkscreen', sans-serif;
+    font-family: 'VT323', monospace;
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=VT323&display=swap');
+    font-size: 25px
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+    
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+    
+   
